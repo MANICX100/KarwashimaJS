@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<link rel="icon" type="image/gif" href="images/myicon.gif"/> <!--Taken from freefavicon.com with permission-->
+<link rel="stylesheet" type="text/CSS" href="scripts/stylesheet.CSS" />
+<title>Daniel Kendall BrainTestJS</title>
+</head>
+
+<body>
+<header>
+<h4>Student iD: N0443740</h4>
+</header>
+<a href="#" onmouseover="document.images['logo'].src='images/logo_on.png'" onmouseout="document.images['logo'].src='images/logo_off.png'"><img src="images/logo_off.png" id="logo" alt="logo"></a> <!--Using HTML worked in labs-->
+
+<p id="playername"></p>
+<p id="highscore"></p>
+
+<div id="contentbox">
+	<div id="Prestart">
+		<p id="welcome">This is a simple game intended to test both your reflexes and your attention</p>
+		Press Start to Begin
+		<input type="button" value="Start" id="button" onClick="main()">
+	</div>
+			<p id="getready"></p>
+			<p id="theWord"></p>
+<input type="button" value="Restart Game" id="Restart" onClick="document.location.reload(true)">
+
+</div>
+
+<footer><h4>A game by Daniel Kendall</h4></footer>
+<noscript>
+	<h1>This page requires Javascript.Please enable javascript in your web browser</h1> 	<!--Adapted from enable-javascript.com-->
+	Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+ instructions on how to enable JavaScript in your web browser</a>
+</noscript>
+
+</body>
+
+<script type="text/javascript" src="scripts/browsercheck.js"></script> <!--Adapted from browser-update.org-->
+<script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script> <!-- Taken from jQuery.org--> 
+<script type="text/javascript" src="scripts/main.js"></script>
+
+</html>														
